@@ -7,7 +7,14 @@ AXES_PROTECTED_LOGINS = (
 
 MIDDLEWARE_CLASSES = (
     'axes.middleware.FailedLoginMiddleware',
-    'user_sessions.middleware.SessionMiddleware'
+    'user_sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'pythias_user_management.middleware.OnlyOneUserMiddleware', # add before sessions
 )
 
 INSTALLED_APPS = (

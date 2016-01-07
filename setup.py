@@ -29,7 +29,10 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires = [
-        'django-aristotle-metadata-registry'
+        'django-aristotle-metadata-registry',
+        'django-password-policies',
+        'django-axes',
+        'django-user-sessions',
     ]
 
 )
