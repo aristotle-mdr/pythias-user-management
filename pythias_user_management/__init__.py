@@ -1,0 +1,1 @@
+default_app_config = 'pythias_user_management.apps.PythiasUserConfig'

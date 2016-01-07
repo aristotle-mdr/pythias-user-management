@@ -1,0 +1,6 @@
+{% load i18n %}
+
+<li {% ifequal activeTab "active_sessions" %}class="active"{% endifequal %}>
+    <a href="{% url 'user_sessions:session_list' %}">
+    <i class="fa fa-heartbeat fa-fw"></i> {% trans 'Active Sessions'%}
+</a></li>
